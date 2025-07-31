@@ -2,48 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohit Anarthe - Flutter Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Anarthe | Flutter Developer Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
+      background-color: #343a40;
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    section {
-      padding: 20px;
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .container {
       max-width: 900px;
-      margin: auto;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    h2 {
-      color: #4CAF50;
-      border-bottom: 2px solid #4CAF50;
-      padding-bottom: 5px;
+    section {
+      margin-bottom: 40px;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #343a40;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
 
-    li {
+    ul li {
       margin-bottom: 10px;
     }
 
     .project a {
-      color: #4CAF50;
+      color: #007bff;
       text-decoration: none;
     }
 
@@ -52,13 +66,11 @@
     }
 
     footer {
+      background-color: #343a40;
+      color: #fff;
       text-align: center;
-      padding: 10px;
-      background: #222;
-      color: white;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -66,43 +78,59 @@
 <body>
   <header>
     <h1>Rohit Anarthe</h1>
-    <p>Flutter Developer | Dart | Firebase | MVVM & MVC | Riverpod & BLoC</p>
+    <p>Flutter Developer | MVVM, GetX, Riverpod | Firebase | API Integration</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Self-motivated Flutter Developer with hands-on experience in mobile app development. Proficient in Dart, Firebase, and integrating REST APIs. Familiar with state management using GetX, Provider, Riverpod, and BLoC.</p>
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a passionate Flutter developer with a strong grasp of MVVM architecture, Firebase integration, state management (Provider, GetX, Riverpod), and clean UI design. I love building robust and scalable mobile applications.</p>
+    </section>
 
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>WOW Infotech Pvt. Ltd.</strong> (Apr 2025 - Present)<br>
-        Jr. Flutter Developer – Worked in a team and independently using MVC & MVVM architectures. Actively learning Riverpod and BLoC. Smooth API integration.
-      </li>
-      <li><strong>FlyCT SoftTech</strong> (July 2024 – Feb 2024)<br>
-        Developed Android and iOS apps using Flutter & Dart. Used GetX/Provider, integrated Google Maps and Firebase.
-      </li>
-      <li><strong>Solace Infotech Pvt. Ltd.</strong> (Jan 2024 – June 2024)<br>
-        Built Bluetooth-based Flutter apps with real-time graphs and Firebase integration.
-      </li>
-    </ul>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Jr. Flutter Developer - WOW Infotech Pvt. Ltd.</strong> (Apr 2025 - Present)<br>Working on scalable Flutter projects using Riverpod, Bloc, and MVVM. Collaborating in a team to build performant mobile apps with seamless API integration.</li>
+        <li><strong>Flutter Developer - FlyCT SoftTech</strong> (July 2024 - Feb 2024)<br>Developed cross-platform apps, integrated APIs, and published to Play Store & App Store.</li>
+        <li><strong>Trainee Software Consultant - Solace Infotech Pvt. Ltd.</strong> (Jan 2024 - June 2024)<br>Built apps with Bluetooth communication and data visualization using Flutter & Firebase.</li>
+      </ul>
+    </section>
 
-    <h2>Projects</h2>
-    <ul class="project">
-      <li><strong>MyOmnamo</strong> – <a href="https://apps.apple.com/in/app/myomnamo/id6477380032" target="_blank">App Store</a></li>
-      <li><strong>Crystal Safal Fasal</strong> – <a href="https://apps.apple.com/in/app/crystal-safal-fasal/id6478291562" target="_blank">App Store</a></li>
-      <li><strong>Glocrest</strong> – Pharmaceutical E-commerce app with advanced filters and add-to-cart feature.</li>
-    </ul>
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <p><strong>MyOmnamo</strong><br>
+        E-commerce app for puja products. Integrated cart, payment, product search.<br>
+        <a href="https://play.google.com/store/apps/details?id=com.flyct.myomnamo" target="_blank">Play Store</a></p>
 
-    <h2>Skills</h2>
-    <p>Flutter, Dart, Firebase, REST APIs, SQLite, Git, Riverpod, BLoC, GetX, Provider</p>
+        <p><strong>Crystal Safal Fasal</strong><br>
+        Farmer-focused app for crop management, feedback, news updates.<br>
+        <a href="https://apps.apple.com/in/app/safal-fasal/id6475657724" target="_blank">App Store</a></p>
+      </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>Email: rohit.anarthe@email.com<br>
-    Location: Nashik, India</p>
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Flutter & Dart</li>
+        <li>State Management: GetX, Provider, Riverpod, Bloc</li>
+        <li>Architecture: MVVM, MVC</li>
+        <li>Firebase (Auth, Firestore, Storage)</li>
+        <li>SQLite, REST APIs, Google Maps</li>
+        <li>Git, GitHub, CI/CD Basics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: rohit.anarthe@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rohit-anarthe" target="_blank">linkedin.com/in/rohit-anarthe</a></p>
+    </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Rohit Anarthe</p>
+    <p>© 2025 Rohit Anarthe. All rights reserved.</p>
   </footer>
 </body>
 
