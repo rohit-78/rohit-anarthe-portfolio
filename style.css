@@ -1,29 +1,37 @@
+/* Base Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.7;
   background-color: #f4f4f4;
   color: #333;
 }
 
 .container {
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
+/* Header */
 header {
   background: #00539CFF;
   color: #fff;
-  padding: 60px 0 30px;
+  padding: 60px 20px 40px;
   text-align: center;
+  border-bottom: 5px solid #FFD662FF;
 }
 
 header h1 {
   margin-bottom: 10px;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 .highlight {
@@ -32,51 +40,97 @@ header h1 {
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #FFD662FF;
   color: #000;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background: #e6c249;
+}
+
+/* Section Headings */
 section h2 {
-  border-bottom: 2px solid #00539CFF;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+  border-bottom: 3px solid #00539CFF;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #00539CFF;
 }
 
+/* Skills */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 .skill-list li {
   background: #00539CFF;
   color: #fff;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
 
+.skill-list li:hover {
+  background: #003f7d;
+}
+
+/* Project & Experience Cards */
 .project, .job {
   background: #fff;
-  padding: 15px 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.project:hover, .job:hover {
+  transform: translateY(-3px);
 }
 
 .project h3, .job h3 {
   margin-top: 0;
+  color: #00539CFF;
+  font-size: 1.4rem;
 }
 
+.project p, .job ul {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.job ul {
+  padding-left: 18px;
+}
+
+/* Contact Section */
+.contact a {
+  color: #00539CFF;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.95rem;
 }
